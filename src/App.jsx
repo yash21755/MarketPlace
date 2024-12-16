@@ -4,6 +4,8 @@ import Profile from "./components/Profile.jsx";
 import Title from "./components/Title.jsx";
 import OptionsNav from "./components/OptionsNav.jsx";
 import AddItem from "./components/AddItem.jsx";
+import { Route, Routes } from "react-router-dom";
+import Donation from './pages/Donation.jsx';
 
 const App = () => {
 
@@ -107,7 +109,9 @@ const App = () => {
           return <Cards item={ele.item} price={ele.price} condition={ele.condition} photo={ele.photo}/>
         })}        
         <AddItem/>
-
+        <Routes>
+          <Route path='/donation' element={<Donation/>}/>
+        </Routes>
       </div>
     </>
   );
