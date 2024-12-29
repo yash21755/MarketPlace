@@ -1,6 +1,7 @@
 import React from "react";
 import AddItemLF from "../components/AddItemLF.jsx";
 import LF from "../components/LF.jsx";
+import Upscroll from "../components/Upscroll.jsx";
 
 const LostAndFound = () => {
     const items=[
@@ -69,7 +70,8 @@ const LostAndFound = () => {
         {items.map(function(ele){
           return <LF situation={ele.situation} item={ele.item} location={ele.location} contact={ele.contact} photo={ele.photo}/>
         })}        
-        <AddItemLF/>
+        {/* <AddItemLF/> */}
+        {<Upscroll />}
         </div>
         </>
      );

@@ -8,6 +8,8 @@ import { Route, Routes } from "react-router-dom";
 import Donation from './pages/Donation.jsx';
 import MarketPlace from "./pages/MarketPlace.jsx";
 import LostAndFound from "./pages/LostAndFound.jsx";
+import MyUploads from "./pages/MyUploads.jsx";
+import NewItemPage from "./pages/NewItemPage.jsx";
 
 const App = () => {
   
@@ -16,12 +18,14 @@ const App = () => {
       <nav className='relative flex items-center justify-between bg-emerald-900 h-36 w-full'>
         <Title/>
         <Profile />
-        <OptionsNav/>
+        <OptionsNav />
       </nav>
         <Routes>
           <Route path="/" element={<MarketPlace/>}/>
           <Route path="/lostandfound" element={<LostAndFound/>}/>
           <Route path='/donation' element={<Donation/>}/>
+          <Route path='/myuploads' element={<MyUploads/>}/>
+          <Route path='/myuploads/upload+new+item' element={<NewItemPage />}/>
         </Routes>
     </>
   );

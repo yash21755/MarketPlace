@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "../components/Cards.jsx";
 import AddItem from "../components/AddItem.jsx";
+import Upscroll from "../components/Upscroll.jsx";
 
 const MarketPlace = () => {
     const items=[
@@ -96,7 +97,8 @@ const MarketPlace = () => {
         {items.map(function(ele){
           return <Cards item={ele.item} price={ele.price} condition={ele.condition} photo={ele.photo}/>
         })}        
-        <AddItem/>
+        {/* <AddItem/> */}
+        {<Upscroll/>}
         </div>
         </>
      );

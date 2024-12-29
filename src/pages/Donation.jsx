@@ -2,10 +2,10 @@ import React from "react";
 
 const Donation = () => {
     return ( 
-        <div className="bg-red-600 text-7xl">
+        <div>
             hello Donation page
-            </div>
-            );
+        </div>
+        );
 }
  
 export default Donation;
